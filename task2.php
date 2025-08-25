@@ -20,10 +20,10 @@ function getUsersOnlineInterval($arr1, $arr2, $bIncludeLastHour=false)
     $arInterVals1 = array();
     $arInterVals2 = array();
     
-    $intLastHourIncluded = 0;
+    $intLastHourIncluded = 1;
     if ($bIncludeLastHour)
     {
-        $intLastHourIncluded = 1;
+        $intLastHourIncluded = 0;
     }
     
     foreach ($arr1 as $arInterval)
